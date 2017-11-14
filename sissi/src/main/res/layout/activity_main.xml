@@ -6,11 +6,25 @@
     android:layout_height="match_parent"
     tools:context="com.wugian.sissi.MainActivity">
 
-    <com.wugian.sissi.view.SnowView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-    <ImageSwitcher
+
+    <ImageView
         android:id="@+id/imageSwitcher"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></ImageSwitcher>
+        android:layout_height="match_parent"
+        android:src="@mipmap/aaa"></ImageView>
+
+    <TextView
+        android:id="@+id/promote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:gravity="bottom|center"
+        android:padding="10dp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white" />
+
+    <com.wugian.sissi.view.SnowView
+        android:id="@+id/snowView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </FrameLayout>

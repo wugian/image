@@ -57,7 +57,9 @@ public class SnowView extends View {
         Drawable drawable = r.getDrawable(R.mipmap.rose_2);
         mFlowers = (((BitmapDrawable) drawable).getBitmap());
         Matrix matrix = new Matrix();
-        matrix.postScale(.14f, .14f);
+        Random random = new Random();
+        float scale = 0.14f - random.getRandom(0.08f);
+        matrix.postScale(scale, scale);
         // 得到新的图片
         mFlowers = Bitmap.createBitmap(mFlowers, 0, 0, mFlowers.getWidth(), mFlowers.getHeight(), matrix,
                 true);
@@ -72,7 +74,9 @@ public class SnowView extends View {
         Drawable drawable = r.getDrawable(id);
         bm = (((BitmapDrawable) drawable).getBitmap());
         Matrix matrix = new Matrix();
-        matrix.postScale(.2f, .2f);
+        Random random = new Random();
+        float scale = 0.2f - random.getRandom(0.1f);
+        matrix.postScale(scale, scale);
         // 得到新的图片
         bm = Bitmap.createBitmap(bm, 0, 0, bm.getWidth(), bm.getHeight(), matrix,
                 true);
