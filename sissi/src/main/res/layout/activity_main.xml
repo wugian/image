@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFC0CB"
     tools:context="com.wugian.sissi.MainActivity">
-
 
     <ImageView
         android:id="@+id/imageSwitcher"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@mipmap/aaa"></ImageView>
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/aaa" />
 
     <TextView
         android:id="@+id/promote"
@@ -21,7 +22,8 @@
         android:gravity="bottom|center"
         android:padding="10dp"
         android:text="@string/app_name"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
 
     <com.wugian.sissi.view.SnowView
         android:id="@+id/snowView"
